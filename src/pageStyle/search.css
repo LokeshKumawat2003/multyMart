@@ -1,0 +1,115 @@
+.serch-coponet {
+  z-index: 1;
+}
+.search-new-product {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 10px 30px;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+}
+
+.search-sell-header {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.search-product-box {
+  padding: 40px 10px 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  height: 100vh;
+  overflow: scroll;
+}
+.search-product-box::-webkit-scrollbar {
+  display: none;
+}
+.search-product {
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(180, 180, 180, 0.667);
+  border-radius: 9px;
+  padding: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-product:hover {
+  box-shadow: 0 4px 20px rgba(180, 180, 180, 0.5);
+}
+
+.search-like {
+  text-align: end;
+  font-size: 1.7rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.search-product:hover .search-like {
+  opacity: 1;
+}
+
+.search-product-image {
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  margin-top: -10px;
+}
+
+.search-product-image img {
+  width: 100%;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.search-product-image:hover img {
+  transform: scale(1);
+}
+
+.search-product-name h4 {
+  color: #2e2e2e;
+  margin: 10px 7px;
+  font-size: 1.1rem;
+}
+
+.search-rating {
+  font-size: 1.5rem;
+  margin-left: 2px;
+  color: gold;
+}
+
+.search-rating svg {
+  margin: 10px 2px;
+}
+
+.search-price {
+  font-size: 1.4rem;
+  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-price svg {
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.search-price svg:hover {
+  color: #ff6600;
+}
+
+@media (max-width: 1023px) and (min-width: 450px) {
+  .search-product-box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .search-product-box {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

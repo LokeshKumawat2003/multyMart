@@ -1,0 +1,91 @@
+/* Container for the signup page */
+.signup-page-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the signup page */
+.signup-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Error message styling */
+.signup-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Form group styling to space input sections */
+.signup-form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+.signup-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input field styling */
+.signup-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.2s ease;
+}
+
+.signup-input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+/* Signup button styling */
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #555;
+}
+
+/* Redirect link styling */
+.signup-redirect {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-login-link {
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.signup-login-link:hover {
+    color: #555;
+}

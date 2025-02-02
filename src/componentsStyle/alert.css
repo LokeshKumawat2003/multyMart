@@ -1,0 +1,46 @@
+.alert-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #4caf50; 
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInOut 4s ease forwards;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.alert svg {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,91 @@
+.new-sell {
+  width: 100%;
+  max-width: 1300px;
+  margin-top: 40px;
+  padding: 10px 30px;
+}
+.sell-header {
+  margin-left: 40px;
+}
+.product-box1 {
+  padding: 40px 10px 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.product {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 12px 0 rgba(180, 180, 180, 0.667);
+  border-radius: 9px;
+  padding: 10px;
+}
+
+.off-box span {
+  background-color: rgb(72, 19, 122);
+  color: white;
+  width: fit-content;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  border-radius: 30px;
+}
+.product:hover .like {
+  opacity: 1;
+  transition: 0.2s;
+}
+.like {
+  margin-top: -15px;
+  text-align: end;
+  font-size: 1.7rem;
+  opacity: 0;
+}
+img {
+  width: 100%;
+}
+.product-image {
+  margin-top: -10px;
+  width: 100%;
+  height: 250px;
+}
+.product-name h4 {
+  color: rgb(46, 46, 46);
+  margin-top: 10px;
+  margin-left: 7px;
+  font-size: 1.1rem;
+}
+.rating {
+  font-size: 1.5rem;
+  margin-left: 2px;
+  color: gold;
+}
+.rating svg {
+  margin: 10px 2px;
+}
+.price {
+  font-size: 1.4rem;
+}
+.price {
+  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price svg {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 1023px) and (min-width: 450px) {
+  .product-box1 {
+    padding: 40px 10px 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+@media (max-width: 450px) {
+  .product-box1 {
+    padding: 40px 10px 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+}
